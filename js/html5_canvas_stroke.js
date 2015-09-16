@@ -28,16 +28,34 @@ dtx.fill();
 
 var clip = document.getElementById('myCanvas3');
 var cltx = clip.getContext('2d');
+
 cltx.save();
-ctx.beginPath();
+cltx.beginPath();
 cltx.rect(50,20,200,100);
 cltx.stroke();
 cltx.clip();
 cltx.fillStyle='green';
 cltx.fillRect(0,0,150,100)
-ctx.stroke();
+cltx.closePath();
+cltx.restore();
 
 cltx.save();
 cltx.beginPath();
 cltx.rect(20,20,100,100);
-ctx.stroke();
+cltx.stroke();
+cltx.clip();
+cltx.fillStyle='red';
+cltx.rect(0,0,120,100)
+cltx.fill();
+cltx.stroke();
+cltx.closePath();
+cltx.restore();
+
+
+var rc = document.getElementById('myCanvas4');
+var arcx = rc.getContext('2d');
+arcx.beginPath();
+arcx.arc(100,75,50,0,2*Math.PI);
+arcx.stroke();
+arcx.filllStyle='#74B151';
+arcx.fill();
