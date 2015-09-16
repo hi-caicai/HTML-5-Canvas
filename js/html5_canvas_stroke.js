@@ -34,6 +34,7 @@ cltx.beginPath();
 cltx.rect(50,20,200,100);
 cltx.stroke();
 cltx.clip();
+
 cltx.fillStyle='green';
 cltx.fillRect(0,0,150,100)
 cltx.closePath();
