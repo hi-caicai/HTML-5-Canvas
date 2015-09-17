@@ -60,3 +60,20 @@ arcx.arc(100,75,50,0,2*Math.PI);
 arcx.stroke();
 arcx.filllStyle='#74B151';
 arcx.fill();
+
+
+var quaa = document.getElementById('myCanvas5');
+var atx = quaa.getContext('2d');
+atx.beginPath();
+atx.moveTo(0,20); // 开始点
+atx.quadraticCurveTo(100,100,200,20);//控制点，和结束点
+atx.closePath();//关闭路径
+atx.stroke();//绘制
+
+
+var bezier = document.getElementById('myCanvas6');
+var betx = bezier.getContext('2d');
+betx.beginPath();
+betx.moveTo(20,100);
+betx.bezierCurveTo(80,100,100,20,200,80);//前两个位控制点，最后位结束点
+betx.stroke();
