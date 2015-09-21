@@ -62,6 +62,7 @@ arcx.filllStyle='#74B151';
 arcx.fill();
 
 
+
 var quaa = document.getElementById('myCanvas5');
 var atx = quaa.getContext('2d');
 atx.beginPath();
@@ -77,3 +78,46 @@ betx.beginPath();
 betx.moveTo(20,100);
 betx.bezierCurveTo(80,100,100,20,200,80);//前两个位控制点，最后位结束点
 betx.stroke();
+
+
+var arc = document.getElementById('myCanvas7');
+var artx = arc.getContext('2d');
+artx.beginPath();
+artx.beginPath();
+artx.moveTo(20,20);//起始点
+artx.lineTo(100,20);//创建水平线
+artx.arcTo(150,20,150,70,50)//创建弧度
+artx.lineTo(150,120);
+artx.stroke();
+
+// 这个感觉有错啊
+
+
+var sca =document.getElementById('myCanvas8');
+var sc = sca.getContext('2d');
+sc.save();//保存这次的状态
+sc.beginPath();//开始一条绘制路径//事实证明，这两句在这里等于没有用
+sc.strokeRect(5,5,25,15);
+sc.scale(2,2);
+sc.strokeRect(5,5,25,15);
+sc.closePath();//闭合路径//事实证明，这两句在这里等于没有用
+sc.restore();//取出之前的状态
+sc.strokeRect(20,20,45,45);//从新绘制
+sc.scale(2,2);
+sc.strokeRect(20,20,45,45);
+
+var sca =document.getElementById('myCanvas9');
+var sc = sca.getContext('2d');
+
+sc.beginPath();//开始一条绘制路径//事实证明，这两句在这里等于没有用
+sc.strokeRect(5,5,25,15);
+sc.save();//保存这次的状态
+sc.scale(2,2);
+sc.strokeRect(5,5,25,15);
+sc.closePath();//闭合路径//事实证明，这两句在这里等于没有用
+sc.restore();//取出之前的状态
+sc.scale(3,3);
+sc.strokeRect(5,5,25,15);
+
+
+

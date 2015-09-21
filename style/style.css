@@ -2,37 +2,62 @@ body{
 	background: #fff;
 }
 #myCanvas{
-width: 500px;
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
 #myCanvas2{
-width: 500px;
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
 #myCanvas3{
-width: 500px;
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
 #myCanvas4{
-width: 500px;
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
 #myCanvas5{
-width: 500px;
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
 #myCanvas6{
-width: 500px;
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
 #myCanvas7{
+width: 1000px;
+height: 500px;
+border:1px solid #999;
+}
+#myCanvas8{
+width: 1000px;
+height: 500px;
+border:1px solid #999;
+}
+#myCanvas9{
+width: 1000px;
+height: 500px;
+border:1px solid #999;
+}
+#myCanvas10{
+width: 1000px;
+height: 500px;
+border:1px solid #999;
+}
+#myCanvas11{
 width: 500px;
+height: 500px;
+border:1px solid #999;
+}
+#myCanvas12{
+width: 1000px;
 height: 500px;
 border:1px solid #999;
 }
